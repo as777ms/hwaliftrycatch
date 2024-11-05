@@ -75,3 +75,42 @@
 
 
 //7
+// function parseJSON(jsonString) {
+//     try {
+//         const parsedObject = JSON.parse(jsonString);
+//         return parsedObject;
+//     } catch (error) {
+//         return `Ошибка при парсинге JSON: ${error.message}`;
+//     }
+// }
+// console.log(parseJSON('{"name": "John",}')); 
+
+
+
+//8
+// function getProperty(obj, propertyName) {
+//     try {
+//         if (propertyName in obj) {
+//             return obj[propertyName];
+//         } else {
+//             throw new Error(`Свойство "${propertyName}" не существует в объекте.`);
+//         }
+//     } catch (error) {
+//         return error.message;
+//     }
+// }
+// const exampleObject = { name: "John", age: 30 };
+// console.log(getProperty(exampleObject, 'name')); 
+
+//9
+// function divideNumbers(a, b) {
+//     try {
+//         if (b === 0) {
+//             throw new Error("Деление на ноль невозможно.");
+//         }
+//         return a / b;
+//     } catch (error) {
+//         return error.message;
+//     }
+// }
+// console.log(divideNumbers(10, 2));
